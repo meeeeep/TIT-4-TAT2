@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!--THIS IS THE NEW PAGE-->
+<html lang="en">
+<head>
+    <% include ../partials/head%>
+</head>
+
+<body class="container-fluid">
+
+<% include ../partials/nav%>
+
+<main>
+    <h1>ADD CONTACT</h1>
+
+    <form action="/contacts" method="POST">
+        <div class="ui form">
+            <div class="fields">
+
+                <div class="field">
+                    <label>First name</label>
+                    <input type="text" name="firstName" placeholder="First Name">
+                </div>
+
+                <div class="field">
+                    <label>Last name</label>
+                    <input type="text" name="lastName" placeholder="Last Name">
+                </div>
+
+                <div class="field">
+                    <label>Meeting Place</label>
+                    <input type="text" name="meetingPlace" placeholder="Meeting place">
+                </div>
+            </div>
+        </div>
+
+        <div class="ui form">
+            <div class="fields">
+                <div class="field">
+                    <label>Phone number</label>
+                    <input type="text" name="phoneNumber" placeholder="Phone number">
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Email">
+                </div>
+
+                <div class="field">
+                    <label>Date met</label>
+                    <input type="text" name="dateMet" placeholder="Date met">
+                </div>
+            </div>
+        </div>
+        <div class="ui form">
+            <div class="fields">
+                <div class="field">
+                    <label>Linkdin/Personal URL</label>
+                    <input type="text" name="url" placeholder="Linkdin/Personal URL">
+                </div>
+
+                <div class="field">
+                    <label>Contacts workplace</label>
+                    <input type="text" name="workPlace" placeholder="Current/Previous">
+                </div>
+
+                <div class="field">
+                    <label>Contacts position there</label>
+                    <input type="text" name="positionThere" placeholder="Contacts position there">
+
+                </div>
+            </div>
+        </div>
+        <div class="ui form">
+            <div class="field">
+                <label>Positions you are interested in</label>
+                <textarea name='positionsInterestedIn' placeholder="Positions you are interested in:"></textarea>
+            </div>
+
+        </div>
+        <button class="ui orange button" type="submit" >Submit</button>
+    </form>
+
+
+
+
+</main>
+
+
+<footer>
+    <% include ../partials/footer%>
+</footer>
+
+
+</body>
+</html>

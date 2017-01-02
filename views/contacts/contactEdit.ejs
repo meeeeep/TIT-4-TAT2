@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!--THIS IS THE NEW PAGE-->
+<html lang="en">
+<head>
+    <% include ../partials/head%>
+</head>
+
+<body class="container-fluid">
+
+<% include ../partials/nav%>
+
+<main>
+    <h1>EDIT CONTACT</h1>
+
+    <form action="/contacts/contactList/<%=contact._id%>?_method=PUT" method="POST">
+        <div class="ui form">
+            <div class="fields">
+
+                <div class="field">
+                    <label>First name</label>
+                    <input type="text" name="firstName" value="<%= contact.firstName%>" placeholder="First Name">
+                </div>
+
+                <div class="field">
+                    <label>Last name</label>
+                    <input type="text" name="lastName" value="<%= contact.lastName%>" placeholder="Last Name">
+                </div>
+
+                <div class="field">
+                    <label>Meeting Place</label>
+                    <input type="text" name="meetingPlace" value="<%= contact.meetingPlace%>" placeholder="Meeting place">
+                </div>
+            </div>
+        </div>
+
+        <div class="ui form">
+            <div class="fields">
+                <div class="field">
+                    <label>Phone number</label>
+                    <input type="text" name="phoneNumber" value="<%=contact.phoneNumber%>" placeholder="Phone number">
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input type="text" name="email" value="<%=contact.email%>" placeholder="Email">
+                </div>
+
+                <div class="field">
+                    <label>Date met</label>
+                    <input type="text" name="dateMet" value="<%=contact.dateMet%>" placeholder="Date met">
+                </div>
+            </div>
+        </div>
+        <div class="ui form">
+            <div class="fields">
+                <div class="field">
+                    <label>Linkdin/Personal URL</label>
+                    <input type="text" name="url" value="<%=contact.url%>" placeholder="Linkdin/Personal URL">
+                </div>
+
+                <div class="field">
+                    <label>Contacts workplace</label>
+                    <input type="text" name="workPlace" value="<%=contact.workPlace%>" placeholder="Current/Previous">
+                </div>
+
+                <div class="field">
+                    <label>Contacts position there</label>
+                    <input type="text" name="positionThere" value="<%=contact.positionThere%>" placeholder="Contacts position there">
+
+                </div>
+            </div>
+        </div>
+        <div class="ui form">
+            <div class="field">
+                <label>Positions you are interested in</label>
+                <textarea name='positionsInterestedIn' placeholder="Positions you are interested in:"> <%= contact.positionsInterestedIn %> </textarea>
+            </div>
+
+        </div>
+        <button class="ui orange button" type="submit" >Submit</button>
+    </form>
+
+
+
+
+</main>
+
+
+
+
+
+<footer>
+    <% include ../partials/footer%>
+</footer>
+
+
+</body>

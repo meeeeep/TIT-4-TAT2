@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!--THIS IS THE NEW PAGE-->
+<html lang="en">
+<head>
+    <% include ../partials/head%>
+</head>
+
+<body class="container-fluid">
+
+<% include ../partials/nav%>
+
+<main>
+    <div class="new contact">
+        <p>First Name: <%= contact.firstName %></p>
+        <p>Last Name: <%= contact.lastName %></p>
+        <p>Meeting Place: <%= contact.meetingPlace %></p>
+        <p>Contacts Phone: <%= contact.phoneNumber %></p>
+        <p>Contacts Email: <%= contact.email %></p>
+        <p>Date Met: <%= contact.dateMet %></p>
+        <p>Linkdin/Personal URL: <%= contact.url %></p>
+        <p>Workplace: <%= contact.workPlace %></p>
+        <p>Position There: <%= contact.positionThere %></p>
+        <p>Positions Interested in: <%= contact.positionsInterestedIn %></p>
+
+    </div>
+
+    <a class="ui orange button" href="/contacts/contactList/<%= contact._id %>/contactEdit">Edit</a>
+
+    <form action="/contacts/contactList/<%=contact._id%>?_method=DELETE" method="POST">
+        <button type="submit" class="btn btn-danger">DELETE</button>
+    </form>
+
+
+</main>
+
+
+<footer>
+    <% include ../partials/footer%>
+</footer>
+
+
+</body>

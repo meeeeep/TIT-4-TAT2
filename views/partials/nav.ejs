@@ -1,0 +1,15 @@
+<div class="topNav"></div>
+
+<div class="ui four item menu">
+
+
+    <% if(!currentUser){%>
+    <a class="item" name="home" href="/">HOME</a>
+<%} else { %>
+    <a class="item" name="myContacts" href="/contacts/contactList">MY CONTACTS</a>
+    <a class="item active" name="addcontacts" href="/contacts/contactForm">ADD CONTACTS</a>
+    <a class="item" name="'logout" href="/logout">LOGOUT</a>
+    <h4> Signed In As: <%= currentUser.username %></h4>
+
+    <% } %>
+</div>

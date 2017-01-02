@@ -1,0 +1,37 @@
+<!--THIS IS THE VIEW/READ-->
+<!DOCTYPE html> <!--THIS IS THE NEW PAGE-->
+<html lang="en">
+<head>
+    <% include ../partials/head%>
+</head>
+
+
+<body class="container-fluid">
+
+<div class="top"></div>
+
+<% include ../partials/nav%>
+
+<main>
+
+    <h1>MY LIST OF CONTACTS</h1>
+
+    <% contacts.forEach(function(contact) { %>
+    <a href="/contacts/contactList/<%= contact._id %>"><br><p class="contact">Name: <%= contact.firstName + ' ' + contact.lastName %></p></a>
+    <% }); %>
+    <br>
+
+    <!--<button><a href="/contacts/contactForm">Add Contact</a></button>-->
+
+    <a class= "ui orange button" type="submit" href= "/contacts/contactForm" > ADD CONTACT </a>
+
+</main>
+
+
+<footer>
+    <% include ../partials/footer%>
+</footer>
+
+
+</body>
+</html>

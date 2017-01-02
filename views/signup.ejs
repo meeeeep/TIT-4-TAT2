@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!--This is the signup page-->
+<html lang="en">
+<head>
+    <% include partials/head%>
+</head>
+
+<body class="container-fluid">
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>TIT-4-TAT
+            </a>
+
+        </div>
+
+        <a class="btn-group btn-group-lg pull-right" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" name=" home"><a href = '/'>HOME</button></a>
+        <button type="button" class="btn btn-default" name="login"><a href ='/login'>LOGIN</button></a>
+    </div>
+
+
+    </div>
+    <main>
+        <p> All we need from you in order to signup is a valid email address and a password of your choice.</p>
+        <div>
+            <h2>Signup</h2>
+            <form method="POST" action="/signup" class="signup">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="text" name="username" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="form-control" type="password" name="password" id="password">  <!--HIDES THE PASSWORD-->
+                </div>
+
+                <input class="ui orange button" type="submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <% include partials/footer%>
+    </footer>
+
+
+</body>
+</html>
