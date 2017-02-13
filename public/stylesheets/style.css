@@ -1,3 +1,5 @@
+@media screen and (min-width: 400px)
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,4 +7,54 @@ body {
 
 a {
   color: #00B7FF;
+}
+h1 {
+  background: #E58A12;
+}
+.top {
+  background: orangered;
+}
+
+.topNav {
+  background: #ff9714;
+}
+.contact {
+  font-size: 1.5em;
+
+}
+
+#login{
+  background: #ff9714;
+  margin: 20em;
+}
+.signup{
+  background: #ff9714;
+  margin:
+}
+
+
+.buttonL{
+  text-align: center;
+  margin: auto;
+}
+
+.loginH{
+  text-align: center;
+  margin: auto;
+}
+
+.container-fluid{
+  padding-top:
+  margin-top: ;
+}
+
+#indexB{
+  text-align: center;
+}
+
+.questions{
+  text-align: center;
+}
+.jumbotron{
+  text-align: center;
 }

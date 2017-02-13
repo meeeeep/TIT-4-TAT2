@@ -14,21 +14,16 @@ router.get('/contactForm', isLoggedIn, function (req, res, next) {
 router.get('/contactList', isLoggedIn, function (req, res, next) {
 
     Contact.find({user: currentUser}, function (err, allContacts) {
-
-        console.log(currentUser.id);
+        console.log(allContacts);
         console.log(allContacts.user);
-        if(err) {
+        console.log(currentUser._id);
+
+        if (err) {
             return next(err);
         }
-        else if (allContacts && allContacts.user && allContacts.user.equals(currentUser.id)){
+        else  (allContacts && allContacts.user && allContacts.user.equals(currentUser._id))
 
-            res.render('contacts/contactList', {contacts : allContacts,     currentUser: req.user});
-        }
-
-        else {
-
-            res.render('contacts/contactList', {contacts : allContacts,     currentUser: req.user});
-        }
+        res.render('contacts/contactList', {contacts : allContacts,     currentUser: req.user});
 
     });
 
@@ -120,6 +115,7 @@ function isLoggedIn(req, res, next) {
     if(req.isAuthenticated()){
         return next();
     }
+    req.flash('error', 'Please Login First!')
     res.redirect('/login');
 }
 module.exports = router;

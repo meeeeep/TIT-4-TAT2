@@ -9,31 +9,15 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>TIT-4-TAT
-            </a>
+            <a class="navbar-brand" href="/"><h2>TIT-4-TAT</h2></a>
 
         </div>
-
-        <a class="btn-group btn-group-lg pull-right" role="group" aria-label="...">
-            <button type="button" class="btn btn-default" name=" home"><a href = '/'>HOME</button></a>
-        <button type="button" class="btn btn-default" name="signup"><a href ='/signup'>SIGNUP</button></a>
     </div>
-
-
-    </div>
-
-
 
     <main>
 
-
-
-        <h2 class="loginH">LOGIN</h2>
-
-
-
         <form method="POST" action="/login" id="login" class="ui raised segment">
+            <h2 class="loginH">PLEASE LOG-IN TO YOUR ACCOUNT</h2>
 
             <br>
             <br>
@@ -41,7 +25,7 @@
             <div class="form-group ui fluid left icon input">
 
                 <label for="email" class="email"></label>
-                <input class="form-control" type="text" name="username" id="email" placeholder="E-mail address">
+                <input class="form-control" type="email" name="username" id="email" placeholder="Email">
                 <i class="user icon"></i>
 
             </div>
@@ -59,7 +43,8 @@
 
             <div class="loginH">
 
-                <input class= "ui orange button" type="submit">
+                <button class= "ui orange button fluid ui button" type="submit"> LOGIN</button>
+                <p> Would you like to <a href="/signup">sign-up</a> instead?</p>
 
         </form>
 

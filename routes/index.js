@@ -16,9 +16,7 @@ router.get('/signup', function (req,res) {
 
 });
 
-
 //POST FOR SIGNUP
-
 router.post('/signup', function (req,res) {
     var newUser = new User({ username: req.body.username });
     User.register(newUser, req.body.password, function (err, user) {
@@ -41,7 +39,6 @@ router.get('/login', function (req,res) {
     res.render('login');
 });
 
-
 //POST LOGIN
 router.post('/login', passport.authenticate('local', {
     successRedirect: '/contacts/contactList',
@@ -57,7 +54,5 @@ router.get('/logout', function(req, res) {
     req.logout();
     res.redirect('/');
 });
-
-
 
 module.exports = router;
