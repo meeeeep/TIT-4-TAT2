@@ -2,7 +2,7 @@
 
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
 
 a {
@@ -10,6 +10,7 @@ a {
 }
 h1 {
   background: #E58A12;
+  font-family: 'Fontdiner Swanky', cursive;
 }
 .top {
   background: orangered;
@@ -20,18 +21,39 @@ h1 {
 }
 .contact {
   font-size: 1.5em;
+  font-family: 'Barrio', cursive;
+  text-align: center;
 
+}
+
+.my{
+  font-family: 'Barrio', cursive;
+  text-align: center;
+}
+
+#contactbut{
+  text-align: center;
+  margin: auto;
 }
 
 #login{
   background: #ff9714;
-  margin: 20em;
+  margin: 8em;
+  width: 430px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.signup{
+#signup{
   background: #ff9714;
-  margin:
+  margin: 8em;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.signupP{
+  text-align: center;
+}
 
 .buttonL{
   text-align: center;
@@ -43,9 +65,13 @@ h1 {
   margin: auto;
 }
 
+.login1{
+  text-align: center;
+  font-family: 'Barrio', cursive;
+}
+
 .container-fluid{
   padding-top:
-  margin-top: ;
 }
 
 #indexB{
@@ -53,8 +79,35 @@ h1 {
 }
 
 .questions{
+  font-family: 'Ultra', serif;
   text-align: center;
+  font-family: 'Barrio', cursive;
+
 }
 .jumbotron{
   text-align: center;
+  font-family: 'Barrio', cursive;
+
+}
+.wrapper{
+  width:100%;
+  z-index: 0;
+}
+
+.navbar-brand{
+  font-family: 'Barrio', cursive;
+}
+.font{
+  font-family: 'Barrio', cursive;
+  text-align: center;
+}
+
+#editB{
+  text-align: center;
+  margin: auto;
+}
+
+#delete{
+  text-align: center;
+  margin: auto;
 }

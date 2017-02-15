@@ -23,12 +23,14 @@
 
     </div>
 
-    <a class="ui orange button" href="/contacts/contactList/<%= contact._id %>/contactEdit">Edit</a>
+
+<div id="editB">
+    <a class="huge ui orange button" href="/contacts/contactList/<%= contact._id %>/contactEdit">Edit</a>
+</div>
 
     <form action="/contacts/contactList/<%=contact._id%>?_method=DELETE" method="POST">
-        <button type="submit" class="btn btn-danger">DELETE</button>
+        <div id="delete"> <button type="submit" class="btn btn-danger">DELETE</button></div>
     </form>
-
 
 </main>
 

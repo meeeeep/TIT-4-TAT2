@@ -5,41 +5,47 @@
 </head>
 
 <body class="container-fluid">
-
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>TIT-4-TAT
-            </a>
+            <a class="navbar-brand" href="/"><h2>TIT-4-TAT</h2></a>
 
         </div>
-
-        <a class="btn-group btn-group-lg pull-right" role="group" aria-label="...">
-            <button type="button" class="btn btn-default" name=" home"><a href = '/'>HOME</button></a>
-        <button type="button" class="btn btn-default" name="login"><a href ='/login'>LOGIN</button></a>
-    </div>
-
-
     </div>
     <main>
-        <p> All we need from you in order to signup is a valid email address or user name and a password of your choice.</p>
-        <div>
-            <h2>Signup</h2>
-            <form method="POST" action="/signup" class="signup">
-                <div class="form-group">
-                    <label for="email">Email </label>
-                    <input class="form-control" type="text" name="username" id="email">
+            <h2 class="font">Signup</h2>
+            <h3 class="font"> All we need from you in order to signup is a valid email address or user name and a password of your choice.</h3>
+
+            <form method="POST" action="/signup" class="ui raised segment" id="signup">
+
+                <br>
+                <br>
+
+                <div class="form-group ui fluid left icon input">
+
+                    <label for="email" class="email"></label>
+                    <input class="form-control" type="email" name="username" id="email" placeholder="Email">
+                    <i class="user icon"></i>
+
                 </div>
 
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input class="form-control" type="password" name="password" id="password">  <!--HIDES THE PASSWORD-->
+                <br>
+
+                <div class="form-group ui fluid left icon input">
+                    <label for="email"> </label>
+                    <input class="form-control" type="password" name="password" id="password" placeholder="Password">  <!--HIDES THE PASSWORD-->
+                    <i class="lock icon"></i>
+
                 </div>
 
-                <input class="ui orange button" type="submit">
+                <div class="loginH">
+
+                    <button class= "ui orange button fluid ui button" type="submit"> SIGNUP</button>
+                    <p> Would you like to <a href="/login">login</a> instead?</p>
+                </div>
+
             </form>
-        </div>
+
     </main>
 
     <footer>
